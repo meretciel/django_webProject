@@ -36,8 +36,8 @@ class Room(models.Model):
 
 
     # other
-    is_available = models.BooleanField(defaut=True)
+    is_available = models.BooleanField(default=True)
     sex = models.CharField(max_length=10,choices=SEX_CHOICES, default='mixed')
     link = models.URLField()
-    description = models.TextField()
+    description = models.TextField(default='')
 

@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html>
+  <head>
+      <title>Find Roommates ! |
+      {% block title %}{% endblock %}</title>
+  </head>
+
+  <body>
+    <div id=nav">
+      <a href="/">home</a> |
+      <a href="/">search</a> |
+      <a href="/">contact</a>
+    </div>
+
+    <h1>{% block head %}{% endblock %}</h1>
+    {% block content %}{% endblock%}
+  </body>
+
+</html>

@@ -1,0 +1,61 @@
+body {
+    margin-top: 50px;
+}
+
+
+.sub_content{
+    height: 200px;
+    background-color: #585858;
+}
+
+td.grid_4 {
+    padding: 10px 0px 10px 0px;
+    background-color: red;
+    text-align: center;
+    border-collapse : collapse;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    display: inline;
+}
+
+
+ul.grid_4 {
+    padding: 10px 0px 10px 0px;
+    background-color: blue;
+    text-align: left;
+    list-style-type: none;
+}
+
+.grid_4 ul {
+    text-align: left;
+    margin-top: 3px;
+}
+
+table {
+    border-spacing: 0px;
+    margin-top: 5px;
+}
+
+
+
+
+/* content part */
+#content {
+    margin-top: 20px;
+}
+
+#search_form {
+    background-color: green;
+    height: 400px;
+}
+
+#publisher {
+    background-color: green;
+    height: 170px;
+}
+
+
+
+
+
+

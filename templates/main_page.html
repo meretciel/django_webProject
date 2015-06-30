@@ -1,32 +1,91 @@
 {% extends "base.html" %}
 
+{% block css_style %}
+<link rel="stylesheet" type="text/css" href="/static/css/960_12_col.css" >
+<link rel="stylesheet" type="text/css" href="/static/css/main_page.css">
+{% endblock %}
 
 {% block title %} Home Page {% endblock %}
 
-{% block head %} Welcom to FindChineseRoommates.com ! {% endblock %}
 
 {% block content %}
-    欢迎来到FindChineseRoommates.com ! </br>
 
-    相信当你来到这个网站的时候，一定在为找到合适自己的房源而苦苦烦恼。
-    不管你是初到美国留学的学生，还是刚步入社会的职场新人，
+    <div id="content" class="container_12"> 
+
+        <div id="publisher" class="grid_12">
+            <h3>公告栏</h3>
+            <p> 我们希望为大家提供一个便捷的租房信息交流平台，让大家从此摆脱找房租房的烦恼。
+                同时真诚地欢迎任何意见和建议，希望在大家的努力下可以把网站设计的更好。
+            </p>
+
+            <p>由于作者初次涉猎网站制作， 故希望能找到有经验的朋友共同同开发。
+               有兴趣的小伙伴可以通过<a href=”mailto:rh1689@nyu.edu”>email</a>与作者取得联系。
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="clear"></div>
+
+    <!-- Mahattan, New Port and Queens picture -->
 
 
-    我们的目标是整合纽约周围适合学生的租房信息， 方便中国留学生互相交流房源信息。
-    这里你将会找到纽约不同地区，不同。。，不同户型的信息。
+    <table class="container_12">
+    <thead>
+        <!-- table header -->
+        <tr>
+            <td class="grid_4"><a href="/"><b>Mahanttan</b></a></td>
+            <td class="grid_4"><a href="/"><b>New Port</b></a></td>
+            <td class="grid_4"><a href="/"><b>Queens</b></a></td>
+        </tr>
+    </thead>
+        
+    <div class="clear"></div>
+    <tbody class="container_12">
+        <!-- picture -->
+        <tr>
+            <td class="grid_4">
+                <img src="/static/images/manhattan_night.jpg" alt="Mahattan Night" height="200" width="300" />
+            </td>
+            <td class="grid_4">
+                <img src="/static/images/newport_night.jpg" alt="Newport Night" height="200" width="300" />
+            </td>
+            <td class="grid_4">
+                <img src="/static/images/queens_night.jpg" alt="Queens Night" height="200" width="300" />
+            </td>
+        </tr>
 
-    在这里，你可以搜索纽约不同地区，不同住房， 不同户型甚至不同卧室的价格。
+        <!-- description   -->
+        <tr>
+            <td class="grid_4">
+                <ul>
+                    <li>地理位置优越</li>
+                    <li>丰富的社交生活</li>
+                    <li>世界各地的美食</li>
+                </ul>
+            </td>
 
+            <td  class="grid_4">
+                <ul>
+                    <li>优美的居住环境</li>
+                    <li>配套设施齐全</li>
+                    <li>无需缴纳city tax </li>
+                </ul>
+            </td>
 
+            <td class="grid_4" >
+                <ul>
+                    <li>较为吸引人的价位</li>
+                    <li>法拉盛众多中国美食</li>
+                    <li>距曼哈顿中城20分钟地铁</li>
+                </ul>
+            </td>
+        </tr> 
+    </tbody>
 
+    </table>
 
-    在此预祝各位小伙伴可以找到自己理想的居处以及合适的室友。</br>
-
-    PS： 本网站作者希望为大家提供一个便捷的租房信息交流平台。由于初次涉猎网站制作，故希望能找到有经验的朋友共同开发。
-    有兴趣的小伙伴可以通过<a href=”mailto:rh1689@nyu.edu”>email</a>与作者取得联系。 </br>
-    谢谢。 </br>
-
-    <hr/>
 
     {% load staticfiles %}
     <img src="{% static 'manhattan_night.jpg' %}" alt="My image" width="200" height="150" />

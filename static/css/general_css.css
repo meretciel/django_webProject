@@ -1,0 +1,8 @@
+#search-form ul {
+    list-style-type: none;
+}
+
+label.required::before {
+    content: "*";
+    color: #ff0000;
+};

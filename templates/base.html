@@ -1,0 +1,64 @@
+<!--
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <title> Find Roomates ! | {% block title %}{% endblock %} </title>
+    {% block css_style %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="/static/css/general_css.css">
+    <style>
+        #nav li {
+            display: inline;
+        }
+        #nav ul {
+            display: inline;
+            list-style-type: none;
+            padding: 5px 0px 1px 0px;
+        }
+        
+        #nav td {
+            vertical-align: bottom;
+            margin-bottom: 50px;
+            background-color: yellow;
+
+        }
+
+        #website_name {
+            display: inline;
+            font: 2.4em  italic;
+            padding-bottom: 0px;
+            line-height: 0px;
+            background-color : blue;
+        }
+    </style>
+</head>
+
+
+<body class="container_12" >
+    <div id="nav">
+        <table>
+            <tbody>
+            <tr>
+                <td><div id="website_name">Find Roommates</div></td>
+                <td width="546"><td>
+                <td><a href="/">home</a>    |</td>
+                <td><a href="/">about</a>   |</td>
+                <td><a href="/">contact</a> </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+    
+    <div class="clear"></div>
+    {% block content %}{% endblock %}
+
+    <div id="footer" class="grid_12"></div>
+</body>
+</html>
+
+

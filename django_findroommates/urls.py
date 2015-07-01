@@ -17,8 +17,10 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 from rooms.views import main_page
+from rooms.views import search_page_newport
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', main_page)
+    url(r'^$', main_page),
+    url(r'^search_newport/$', search_page_newport),
 ]
